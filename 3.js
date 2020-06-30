@@ -5,7 +5,7 @@ const moviesData = JSON.parse(fs.readFileSync("./movies.json"));
 const dbConnection = mysql.createPool({
   host: "localhost",
   user: "root",
-  password: "password",
+  password: "Konkavman70.",
   database: "movies",
 });
 
