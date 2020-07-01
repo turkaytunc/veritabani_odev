@@ -1,11 +1,11 @@
 /*
 3.SORU
 
-Sizin de soylediginiz gibi internet uzerinde farkli json-to-sql cozumleri bulunsa da denediklerimin hicbiri duzgun bir sonuc vermedi. 
+Sizin de söylediğiniz gibi internet üzerinde farklı json-to-sql cözümleri bulunsa da denediklerimin hicbiri duzgun bir sonuc vermedi. 
 Duzgun denebilecek tek cozum https://blog.sqlizer.io/posts/mongodb-sqlizer-api/  adresindeki orm ile post request atarak mumkun ancak yine istenen sekilde dosya elde etmek zor. Bulabildigim en uygun cozum node.js ile map fonksiyonlari kullarak veriyi islemek oldu.
 
-mysql database localde calistirdigim icin soyle bir hata aldim:
-    Client does not support authentication protocol requested by server; consider upgrading MySQL client
+mysql veritabanını localde calıştırdığım için şöyle bir hata aldım:
+    "Client does not support authentication protocol requested by server; consider upgrading MySQL client"
     
     Su sekilde bir cozumu mevcutmus;
     
