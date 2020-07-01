@@ -14,7 +14,15 @@ mysql veritabanını localde calıştırdığım için şöyle bir hata aldım:
     
     yukaridaki 2 satir query'i calistirarak hatadan kurtuldum.
     
-    3. sorunun cevabinini olusturan programi calistirmak icin bilgisayarda nodejs kurulu olmalidir. "npm install" komutu calistirilip gerekli dependencyler yuklendikten sonra "npm start" komutu calistirilarak program calistirilabilir.
+    
 
-    tum bilgilerin bulundugu github reposuna su adresten ulasabilirsiniz: https://github.com/turkaytunc/veritabani_odev
+    odev ile ilgili tum bilgiler ve documanlarin bulundugu github reposuna su adresten ulasabilirsiniz: https://github.com/turkaytunc/veritabani_odev
+
+    3. sorunun cevabinini olusturan programi calistirmak icin bilgisayarda nodejs kurulu olmalidir.
+
+    github reposu bilgisayara clone'landiktan sonra 
+    "npm install" komutu calistirilip gerekli dependencyler yuklenir.
+    "npm start" komutu calistirilarak program calistirilabilir.
+
+    
  */
