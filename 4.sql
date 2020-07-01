@@ -30,12 +30,3 @@ WHERE movies.movie_id = imdb.imdb_foreign
 GROUP BY movies.movie_title
 ORDER BY max(imdb.imdb_votes) DESC
 LIMIT 10;
-
-
-
-
-
-
-
-
-
