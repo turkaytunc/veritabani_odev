@@ -1,3 +1,11 @@
 # Veritabani Final Odevi
 
-## 3. sorunun cevabinini olusturan programi calistirmak icin bilgisayarda nodejs kurulu olmalidir. "npm install" komutu calistirilip gerekli dependencyler yuklendikten sonra "npm start" komutu calistirilarak program calistirilabilir
+## 3 numarali sorunun cevabi
+
+### 3. sorunun cevabinini olusturan programi calistirmak icin bilgisayarda nodejs kurulu olmalidir
+
+### Proje clone yapildiktan sonra
+
+### "npm install" komutu calistirilip gerekli dependencyler yuklenir
+
+### "npm start" komutu calistirilarak program calistirilabilir
