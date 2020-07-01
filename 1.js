@@ -14,3 +14,5 @@ db.movies.find({ "awards.wins": { $gt: 10 } }).sort({ "awards.wins": -1, "awards
 db.movies.aggregate([{ $project: { _id: 0, cast: 1 } }, { $unwind: "$cast" }, { $group: { _id: "$cast", count: { $sum: 1 } } }, { $project: { _id: 0, cast: "$_id", count: 1 } }, { $sort: { count: -1 } }, { $limit: 20 }]);
 
 //d. imdb.votes alanına göre en çok oy verilen ilk 10 filmi listeleyin. Elde edeceğiniz sonuç dersin videosunda Charts bölümü anlatılırken ‘27:05’ süresinde verilen grafikteki gibi olmalıdır. Bu alanların bazı dokümanlarda boş string olması ve “The Shawshank Redemption” filmi ile ilgili iki farklı doküman olması durumlarını dikkate alın.
+
+db.movies.aggregate([{ $project: { _id: 0, imdb: { votes: 1 }, title: 1 } }, { $unwind: "$imdb.votes" }, { $group: { _id: "$imdb.votes", votes: { $max: "$imdb.votes"}, name: { $first: "$title" } } }, { $project: { _id: 0, imdb: { votes: "$_id" }, name: 1 } }, { $sort: { "imdb.votes": -1 } }, { $limit: 10 }]);
